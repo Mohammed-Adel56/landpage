@@ -1,0 +1,10 @@
+@import "tailwindcss";
+.rectangle {
+    position: relative;
+    top: 10px;
+
+    width: 120px;
+    height: 12px;
+    background-color: rgba(34, 79, 88, 1);
+    border-radius: 24px 0px 0px 24px;
+  } 
