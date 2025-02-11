@@ -1,6 +1,42 @@
 import React from 'react';
 
 const Sections = () => {
+  const showItemsDesktop =[
+    {
+      name:"فساتين",
+      background:"https://c.animaapp.com/yMf9VDvP/img/frame-36-5@2x.png"
+    },
+    {
+      name:"عبايا مميزة",
+      background:"https://c.animaapp.com/yMf9VDvP/img/frame-22.png"
+    },
+    {
+      name:"عبايا ملونة",
+      background:"https://c.animaapp.com/yMf9VDvP/img/frame-24.png"
+    },
+    {
+      name:"عبايا ملونة",
+      background:"https://c.animaapp.com/yMf9VDvP/img/frame-24.png"
+    },
+  ] ;
+  const showItemMobile = [
+    {
+      name:" عبايا ملونة",
+      background:"./img/product1.png"
+    },
+    {
+      name:"عبايا مميزة",
+      background:"./img/product2.png"
+    },
+    {
+      name:" فساتين",
+      background:"./img/file-1-3.png"
+    },
+    {
+      name:"فساتين ",
+      background:"./img/file-1-3.png"
+    },
+  ]
   return (
     <div>
       {/* Desktop Layout */}
@@ -10,12 +46,12 @@ const Sections = () => {
             {/* Group 3 Section */}
             <div className="group-3">
               <div className="frame-32 flex justify-between p-4">
-                {['فساتين', 'عبايا مميزة', 'عبايا ملونة', 'عبايا ملونة'].map((item, index) => (
-                  <div key={index} className="frame-33 w-[282px] h-[564px] rounded-lg overflow-hidden border border-[#b7d8c7] shadow-sm bg-cover bg-center" style={{ backgroundImage: `url(https://c.animaapp.com/yMf9VDvP/img/frame-23.png)` }}>
+                {showItemsDesktop.map((item, index) => (
+                  <div key={index} className="frame-33 w-[282px] h-[564px] rounded-lg overflow-hidden border border-[#b7d8c7] shadow-sm bg-cover bg-center" style={{ backgroundImage: `url(${item.background})` }}>
                     <div className="frame-34 flex flex-col items-center gap-6 mt-[398px]">
                       <div className="h-lite">
                         <div className="text-wrapper-19 font-tajawal font-medium text-white text-2xl leading-[36.3px]">
-                          {item}
+                          {item.name}
                         </div>
                       </div>
                       <div className="h-button-wrapper">
@@ -53,14 +89,14 @@ const Sections = () => {
             </div>
             <div className="frame-22">
               <div className="frame-23 grid grid-cols-2 gap-7   ">
-                {['عبايا مميزة', 'عبايا ملونة', 'فساتين', 'فساتين'].map((item, index) => (
+                {showItemMobile.map((item, index) => (
                   <div key={index} className="overlap-group-wrapper relative w-[171px] h-[129px] bg-black/20 rounded-lg shadow-sm ">
                     <div className="overlap-group-2 relative">
                       <div className="rectangle-10 absolute w-full h-full bg-black/20"></div>
                       <div className="phone-wrapper absolute top-[30px] left-[102px]">
                         <div className="phone">
                           <div className="text-wrapper-16 font-tajawal font-bold text-white  text-sm leading-[18.9px]">
-                            {item}
+                            {item.name}
                           </div>
                         </div>
                       </div>
@@ -69,7 +105,7 @@ const Sections = () => {
                           <div className="text-wrapper-17">تسوق الآن</div>
                         </div>
                       </div>
-                      <img className="file absolute w-[96px] h-[150px] top-[-30px] left-[-20px]" src="./img/file-1-3.png" alt="Product" />
+                      <img className="file absolute w-[96px] h-[150px] top-[-30px] left-[-20px]" src={item.background} alt="Product" />
                     </div>
                   </div>
                 ))}
