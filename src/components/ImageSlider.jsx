@@ -1,6 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 export default function ImageSlider() {
+  const images = [
+    "https://c.animaapp.com/yMf9VDvP/img/file-1.png",
+    "https://c.animaapp.com/yMf9VDvP/img/file-1.png", // Add more images as needed
+  ];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+  const handlePointClick = (index) => {
+    setCurrentIndex(index); // Change image on point click
+  };
   return (
     <>
 <div className='hidden md:block'>
@@ -11,7 +27,7 @@ export default function ImageSlider() {
         <div className=" w-full h-[720px]  bg-black/20 rounded-2xl shadow-lg overflow-hidden bg-[url('https://c.animaapp.com/yMf9VDvP/img/desktop---2.png')] bg-cover bg-center">
           <div className="relative w-full h-[720px]">
             <img
-              src="https://c.animaapp.com/yMf9VDvP/img/file-1.png"
+              src={images[currentIndex]}
               alt="Background"
               className="absolute w-[604px] h-[720px] top-0 left-[19px]"
             />
@@ -35,11 +51,15 @@ export default function ImageSlider() {
               </div>
             </div>
             <div className="absolute top-[676px] left-[610px] flex items-center gap-[4px] p-[8px_12px] bg-white/20 rounded-[24px]">
-              <div className="w-[60px] h-[12px] bg-gray-900 bg-icons rounded-[8px]"></div>
-              <div className="w-[36px] h-[12px] bg-gray-800 rounded-[8px]"></div>
-              <div className="w-[24px] h-[12px] bg-gray-600 rounded-[8px]"></div>
-              <div className="w-[12px] h-[12px] bg-gray-500 rounded-[8px]"></div>
-            </div>
+        {images.map((_, index) => (
+          <div
+            key={index}
+            onClick={() => handlePointClick(index)} // Add click handler
+            className={`rounded-[8px] ${currentIndex === index ? 'bg-gray-900' : 'bg-gray-600'} transition-all duration-300`}
+            style={{ width: currentIndex === index ? '60px' : '24px', height: '12px' }}
+          ></div>
+        ))}
+      </div>
           </div>
         </div>
       </div>
@@ -78,11 +98,15 @@ export default function ImageSlider() {
               </div>
             </div>
             <div className="absolute top-[676px] left-[610px] flex items-center gap-[4px] p-[8px_12px] bg-white/20 rounded-[24px]">
-              <div className="w-[60px] h-[12px] bg-gray-900 bg-icons rounded-[8px]"></div>
-              <div className="w-[36px] h-[12px] bg-gray-800 rounded-[8px]"></div>
-              <div className="w-[24px] h-[12px] bg-gray-600 rounded-[8px]"></div>
-              <div className="w-[12px] h-[12px] bg-gray-500 rounded-[8px]"></div>
-            </div>
+        {images.map((_, index) => (
+          <div
+            key={index}
+            onClick={() => handlePointClick(index)} // Add click handler
+            className={`rounded-[8px] ${currentIndex === index ? 'bg-gray-900' : 'bg-gray-600'} transition-all duration-300`}
+            style={{ width: currentIndex === index ? '60px' : '24px', height: '12px' }}
+          ></div>
+        ))}
+      </div>
           </div>
         </div>
       </div>
