@@ -97,16 +97,16 @@ export default function ImageSlider() {
                 </button>
               </div>
             </div>
-            <div className="absolute top-[676px] left-[610px] flex items-center gap-[4px] p-[8px_12px] bg-white/20 rounded-[24px]">
-        {images.map((_, index) => (
-          <div
-            key={index}
-            onClick={() => handlePointClick(index)} // Add click handler
-            className={`rounded-[8px] ${currentIndex === index ? 'bg-gray-900' : 'bg-gray-600'} transition-all duration-300`}
-            style={{ width: currentIndex === index ? '60px' : '24px', height: '12px' }}
-          ></div>
-        ))}
-      </div>
+            <div className="absolute top-[676px] left-[50%] transform -translate-x-1/2 flex items-center gap-[4px] p-[8px_12px] bg-white/20 rounded-[24px]">
+            {images.map((_, index) => (
+              <div
+                key={index}
+                onClick={() => handlePointClick(index)} // Add click handler
+                className={`rounded-[8px] ${currentIndex === index ? 'bg-gray-900' : 'bg-gray-600'} transition-all duration-300`}
+                style={{ width: currentIndex === index ? '60px' : '24px', height: '12px' }}
+              ></div>
+            ))}
+          </div>
           </div>
         </div>
       </div>
