@@ -22,19 +22,23 @@ const Sections = () => {
   const showItemMobile = [
     {
       name:" عبايا ملونة",
-      background:"./img/product1.png"
+      background:"./img/product1.png",
+      imageBackground:"./img/background1.png"
     },
     {
       name:"عبايا مميزة",
-      background:"./img/product2.png"
+      background:"./img/product2.png",
+      imageBackground:"./img/background2.png"
     },
     {
       name:" فساتين",
-      background:"./img/file-1-3.png"
+      background:"./img/file-1-3.png",
+      imageBackground:"./img/background1.png"
     },
     {
       name:"فساتين ",
-      background:"./img/file-1-3.png"
+      background:"./img/file-1-3.png",
+      imageBackground:"./img/background3.png"
     },
   ]
   return (
@@ -76,36 +80,38 @@ const Sections = () => {
           <div className="frame-19">
             <div className="frame-20 flex items-center justify-center gap-5 mb-7">
               <div className="frame-21">
-                <div className="rectangle-9 w-[100px] h-1 bg-[#224f58]"></div>
+                <div className="rectangle-9 w-[120px] h-1 bg-[#224f58]"></div>
               </div>
               <div className="h">
-                <div className="text-wrapper-15 font-tajawal font-bold text-[#5cbcac] text-xl leading-[29px]">
+                <div className="text-wrapper-15 font-tajawal font-bold text-[#5cbcac] text-[20px] leading-[29px]">
                   التصنيفات
                 </div>
               </div>
               <div className="frame-21">
-                <div className="rectangle-9 w-[100px] h-1 bg-[#224f58]"></div>
+                <div className="rectangle-9 w-[120px] h-1 bg-[#224f58]"></div>
               </div>
             </div>
-            <div className="frame-22">
+            <div className="frame-22 ">
               <div className="frame-23 grid grid-cols-2 gap-7   ">
                 {showItemMobile.map((item, index) => (
-                  <div key={index} className="overlap-group-wrapper relative w-[171px] h-[129px] bg-black/20 rounded-lg shadow-sm ">
+                 
+                 <div key={index} className="bg-cover overlap-group-wrapper relative w-[171px] h-[129px]   shadow-sm " style={{ backgroundImage: `url(${item.imageBackground})` }}>
+                    <div className="rectangle-10 absolute w-full h-full bg-black/20"></div>
                     <div className="overlap-group-2 relative">
                       <div className="rectangle-10 absolute w-full h-full bg-black/20"></div>
-                      <div className="phone-wrapper absolute top-[30px] left-[102px]">
+                      <div className="phone-wrapper absolute top-[30px] left-[95px] w-full">
                         <div className="phone">
                           <div className="text-wrapper-16 font-tajawal font-bold text-white  text-sm leading-[18.9px]">
                             {item.name}
                           </div>
                         </div>
                       </div>
-                      <div className="frame-24 absolute top-[70px] left-[70px]">
-                        <div className="  bg-[#5cbcac] text-white px-4 py-2 rounded-lg">
-                          <div className="text-wrapper-17">تسوق الآن</div>
+                      <div className="frame-24 absolute top-[70px] left-[85px]">
+                        <div className="  bg-[#5cbcac] text-white px-3 py-1   w-[80px] border border-amber-50">
+                          <div className="text-wrapper-17 text-center text-[10px]">تسوق الآن</div>
                         </div>
                       </div>
-                      <img className="file absolute w-[96px] h-[150px] top-[-30px] left-[-20px]" src={item.background} alt="Product" />
+                      <img className="file absolute w-[96px] h-[150px] top-[-30px] left-[-28px]" src={item.background} alt="Product" />
                     </div>
                   </div>
                 ))}

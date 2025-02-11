@@ -4,33 +4,35 @@ const Footer = () => {
   return (
     <div className="w-full">
       <div className="bg-[#f3f6f5] text-[#16333b] py-10 px-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo - First on mobile, last on desktop */}
           <div className="order-1 md:order-4 mx-auto">
             <img src="./img/g-16.png" alt="Logo" />
           </div>
 
           {/* Pages - Second on mobile, first on desktop */}
+            
           <div className="order-2 md:order-3 mx-auto">
-            <h3 className="text-xl font-bold mb-4">صفحات تهمك</h3>
-            <ul className="space-y-2">
-              <li>الصفحة الرئيسية</li>
-              <li>سياسة الخصوصية</li>
-              <li>شروط الخدمة</li>
-              <li>اتصل بنا</li>
-            </ul>
-          </div>
+            <h3 className="text-[25px] text-[#16333B] font-bold mb-4 text-center md:text-right">صفحات تهمك</h3>
+            <div className='grid md:grid-cols-2 grid-cols-2 gap-7'>
 
-          {/* Store - Third on mobile, second on desktop */}
-          <div className="order-3 md:order-2 mx-auto">
-            <h3 className="text-xl font-bold mb-4">المتجر</h3>
-            <ul className="space-y-2">
+           
+            <ul className="space-y-2 text-[#6D6D6D] text-[18px]">
               <li>الأسئلة الشائعة</li>
               <li>الشحن والإرجاع</li>
               <li>من نحن</li>
               <li>المتجر</li>
             </ul>
+            <ul className="space-y-2 text-[#6D6D6D] text-[18px]">
+              <li>الصفحة الرئيسية</li>
+              <li>سياسة الخصوصية</li>
+              <li>شروط الخدمة</li>
+              <li>اتصل بنا</li>
+            </ul>
+            </div>
           </div>
+
+          
 
           {/* Social Media - Last on mobile, third on desktop */}
           <div className="order-4 md:order-1 mx-auto">

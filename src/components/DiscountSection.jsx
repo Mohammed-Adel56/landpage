@@ -19,10 +19,10 @@ const DiscountSection = () => {
           {/* Text and Button Section */}
           <div className="flex flex-col justify-end items-center gap-2 w-[495px] ms-[240px]">
             <div className="flex flex-col  items-center gap-2">
-              <p className="text-[31px] font-extrabold text-green-500 text-right">
+              <p className="text-[31px] font-extrabold text-[#5CBCAC] text-right">
                 احصل على خصم 25% الآن
               </p>
-                <p className="text-[20px] text-black text-center leading-7">
+                <p className="text-[20px] text-[#16333B] text-center leading-7">
                     اشترك في نشرتنا البريدية واحصل على برومو كود خصم 25% على أول عملية شراء لك. لا تفوت الفرصة
               </p>
             </div>
@@ -42,11 +42,11 @@ const DiscountSection = () => {
 
       {/* Mobile Section */}
       <div className="lg:hidden flex flex-col items-center p-4 bg-gradient-to-r from-[#ececf4] to-[#c5dfd8] w-[95%] rounded-lg mx-auto mb-10">
-        <div className="flex flex-col items-center gap-4">
-          <p className="text-[20px] font-bold text-[#79c7ba] text-right">
+        <div className="flex flex-col items-center gap-2">
+          <p className="text-[20px] font-bold text-[#5CBCAC] text-right">
             احصل على خصم 25% الآن
           </p>
-          <p className="text-[16px] text-[#4c6268] text-center leading-6">
+          <p className="text-[16px] text-[#16333B] text-center leading-6">
             احصل على برومو كود خصم 25% على أول عملية شراء لك. لا تفوت الفرصة
           </p>
         </div>

@@ -108,25 +108,25 @@ function Header() {
                 className="absolute top-0 right-0 w-[74px] h-full" 
               />
               <div className="absolute top-1 right-20 text-gray-400 text-sm">
-                وش اللي تدوري عليه؟
+                <input value="وش اللي تدوري عليه؟"/>
               </div>
             </div>
           </div>
+        </div>
           <div className="flex items-center justify-center space-x-4 mt-4" dir='rtl'>
             {navItems.map((item, index) => (
               <button 
                 key={index} 
-                className={`text-base ${
+                className={`text-base text-[20px] ${
                   item.active 
-                    ? 'text-[#icons] font-medium' 
-                    : 'text-[#1f3f3a]'
+                    ? 'text-[#5CBCAC] font-medium' 
+                    : 'text-[#1F403A]'
                 }`}
               >
                 {item.label}
               </button>
             ))}
           </div>
-        </div>
       </div>
 
       {/* Mobile Navigation */}
@@ -164,7 +164,7 @@ function Header() {
               className="absolute top-0 right-0 w-[74px] h-full" 
             />
             <div className="absolute top-1 right-20 text-gray-400 text-sm">
-              وش اللي تدوري عليه؟
+            <input value="وش اللي تدوري عليه؟"/>
             </div>
           </div>
         </div>

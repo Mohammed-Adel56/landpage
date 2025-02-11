@@ -44,12 +44,12 @@ const FeaturedProducts = ({title}) => {
   return (
     <div className="w-full bg-gray-100 py-12" dir='rtl'>
         <div className="flex justify-between items-center mb-8">
-          <div className='flex justify-start items-center'>
-            <div className="rectangle self-center" dir='ltr'></div>
-            <h2 className="text-3xl font-bold text-[#5cbcac]">{title}</h2>
+          <div className='flex justify-start items-center gap-1'>
+            <div className="rectangle self-center md:w-[100px] md:h-[10px] md:top-1 w-10 h-2 relative top-0" dir='ltr'></div>
+            <h2 className="md:text-3xl text-normal font-bold text-[#5cbcac]">{title}</h2>
           </div>
           <div className="flex items-center gap-2 text-black">
-            <div className="text-lg">عرض الكل</div>
+            <div className="md:text-lg text-sm">عرض الكل</div>
             <img 
               className="w-6 h-6" 
               src="https://c.animaapp.com/yMf9VDvP/img/icon-2.svg" 

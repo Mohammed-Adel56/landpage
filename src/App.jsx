@@ -10,7 +10,7 @@ import ShareYourLooks from './components/ShareYourLooks';
 function App() {
 
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Header/>
       <ImageSlider/>
       <FeaturedProducts title="وصل  حديثاً" />
@@ -20,7 +20,7 @@ function App() {
       <ShareYourLooks/>
       
       <Footer />
-    </>
+    </div>
   )
 }
 

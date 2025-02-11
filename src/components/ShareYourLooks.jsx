@@ -13,7 +13,7 @@ const ShareYourLooks = () => {
           }}
         >
             {/* Overlay for Blur */}
-          <div className="absolute inset-0 backdrop-blur-sm"></div>
+            <div className="absolute w-full h-[215px] top-[1px] left-0 bg-black/50"></div>
           {/* Text Section */}
           <div className="absolute top-[30px] left-[500px] flex flex-col items-center gap-5">
             <div className="w-[248px] h-[24px] flex items-center justify-center gap-2.5">
@@ -22,8 +22,8 @@ const ShareYourLooks = () => {
               </p>
             </div>
             <div className="w-full flex items-center justify-center">
-              <p className="text-[13px] text-[#2d4950] text-center leading-5">
-                منشني @syriana_boutique syriana_boutique# لفرصة عرض صورك على صفحتنا!
+              <p className="text-[13px] text-[#030a0c] text-center font-bold">
+           !   لفرصة عرض صورك على صفحتنا  @syriana_boutique syriana_boutique# منشي  
               </p>
             </div>
           </div>
@@ -49,10 +49,10 @@ const ShareYourLooks = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('img/background.png')",
+              "url('img/background5.png')",
           }}
         />
-        <div className="absolute inset-0 backdrop-blur-sm"></div>
+       <div className="absolute w-full h-[215px] top-[1px] left-0 bg-black/40"></div>
 
         {/* Text Section */}
         <div className="absolute top-[79px] left-[115px] flex flex-col items-center gap-1">
@@ -62,8 +62,8 @@ const ShareYourLooks = () => {
             </p>
           </div>
           <div className="w-[148px] flex items-center justify-center">
-            <p className="text-[10px] text-[#4c6268] text-center leading-5">
-            منشني @syriana_boutique syriana_boutique# لفرصة عرض صورك على صفحتنا!
+            <p className="text-[13px] text-[#16333B] text-center leading-5" style={{ direction: 'rtl' }}>
+            منشني @syriana_boutique syriana_boutique# لفرصة عرض صورك على صفحتنا!             
             </p>
           </div>
         </div>
@@ -73,10 +73,10 @@ const ShareYourLooks = () => {
         <img
           src="./img/file-1-1.png"
           alt="File 1"
-          className="absolute w-[206px] h-[162px] top-[53px] left-[-30px]"
+          className="absolute w-[206px] h-[162px] top-[53px] left-[-50px]"
         />
         
-        <div className="absolute w-[306px] h-[255px] top-[-40px] right-[-7px] ">
+        <div className="absolute w-[306px] h-[255px] top-[-40px] left-[120px] ">
           <img
             src="./img/file-6-1.png"
             alt="File 6"

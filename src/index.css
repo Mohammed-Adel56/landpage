@@ -1,10 +1,54 @@
 @import "tailwindcss";
 .rectangle {
-    position: relative;
-    top: 10px;
+    
 
-    width: 120px;
-    height: 12px;
     background-color: rgba(34, 79, 88, 1);
     border-radius: 24px 0px 0px 24px;
   } 
+  body{
+    font-family: "Tajawal", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  .tajawal-extralight {
+    font-family: "Tajawal", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .tajawal-light {
+    font-family: "Tajawal", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .tajawal-regular {
+    font-family: "Tajawal", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .tajawal-medium {
+    font-family: "Tajawal", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .tajawal-bold {
+    font-family: "Tajawal", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .tajawal-extrabold {
+    font-family: "Tajawal", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .tajawal-black {
+    font-family: "Tajawal", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
