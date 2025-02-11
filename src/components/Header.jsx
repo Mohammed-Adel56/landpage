@@ -105,9 +105,9 @@ function Header() {
               <img 
                 src="https://c.animaapp.com/yMf9VDvP/img/frame.svg" 
                 alt="Search" 
-                className="absolute top-0 right-0 w-[74px] h-full" 
+                className="absolute top-0 right-[-5px] w-[74px] h-full" 
               />
-              <div className="absolute top-1 right-20 text-gray-400 text-sm">
+              <div className="absolute top-1 right-30 text-gray-400 text-sm">
                 <input value="وش اللي تدوري عليه؟"/>
               </div>
             </div>
@@ -161,7 +161,7 @@ function Header() {
             <img 
               src="https://c.animaapp.com/yMf9VDvP/img/frame.svg" 
               alt="Search" 
-              className="absolute top-0 right-0 w-[74px] h-full" 
+              className="absolute top-0 right-[-5px] w-[74px] h-full" 
             />
             <div className="absolute top-1 right-20 text-gray-400 text-sm">
             <input value="وش اللي تدوري عليه؟"/>

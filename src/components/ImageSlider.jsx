@@ -71,22 +71,22 @@ export default function ImageSlider() {
 
       {/* Main Content */}
       <div className="relative w-full min-h-screen mt-[10px] bg-white ">
-        <div className=" w-full h-[720px]  bg-black/20 rounded-2xl shadow-lg overflow-hidden bg-[url('./img/backgroundMobile.png')] bg-cover bg-center">
+        <div className=" w-[90%] ml-3 h-[720px]  bg-black/20 rounded-2xl shadow-lg overflow-hidden bg-[url('./img/backgroundMobile.png')] bg-cover bg-center">
           <div className="relative w-full h-[720px]">
             <img
               src="https://c.animaapp.com/yMf9VDvP/img/file-1.png"
               alt="Background"
-              className="object-cover absolute top-[280px] left-[-30px] "
+              className="object-cover absolute top-[350px] left-[-30px] "
             />
             <div className="absolute w-full h-[719px] top-[1px] left-0 bg-black/40"></div>
-            <div className="absolute w-[370px] top-[50px]  flex flex-col items-end gap-[30px]">
+            <div className="absolute w-[370px] top-[50px] left-[-40px]  flex flex-col items-end gap-[30px]">
               <div className="flex flex-col items-end  w-full p-2">
                 <div className=" flex items-center justify-center gap-[15px]">
                   <h1 className="text-[16px] font-bold text-white leading-[56.6px] text-right">
                     اكتشف أناقة الشرق الأوسط
                   </h1>
                 </div>
-                <p className="text-[13px] font-medium text-gray-100 leading-[36.3px] text-right">
+                <p className="text-[13px] w-[90%] font-medium text-gray-100 leading-[36.3px] text-right">
                   الملابس ليست مجرد وسيلة للتدفئة أو الحماية، بل هي أيضًا وسيلة
                   للتعبير عن الذات وتعكس ثقافاتنا وتقاليدنا
                 </p>
