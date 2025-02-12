@@ -107,8 +107,8 @@ function Header() {
                 alt="Search" 
                 className="absolute top-0 right-[-5px] w-[74px] h-full" 
               />
-              <div className="absolute top-1 right-0 text-gray-400 text-sm text-right">
-                <input placeholder="...البحث"/>
+              <div className="absolute top-1 right-0 text-gray-400 text-sm text-left ">
+                <input placeholder="...البحث" className='border-none'/>
               </div>
             </div>
           </div>
@@ -163,8 +163,8 @@ function Header() {
               alt="Search" 
               className="absolute top-0 right-[-5px] w-[74px] h-full" 
             />
-            <div className="absolute top-1 right-0 text-gray-400 text-sm text-right">
-            <input placeholder="...البحث"/>
+            <div className="absolute top-1 right-0 text-gray-400 text-sm text-left">
+            <input placeholder="...البحث" className='border-none' />
             </div>
           </div>
         </div>
