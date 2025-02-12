@@ -26,8 +26,8 @@ const Footer = () => {
             <ul className="space-y-2 text-[#6D6D6D] text-[18px]  text-right">
               <li>الصفحة الرئيسية</li>
               <li>سياسة الخصوصية</li>
-              <li className='text-right'>شروط الخدمة</li>
-              <li className='text-right'>اتصل بنا</li>
+              <li className='text-right '>شروط الخدمة</li>
+              <li className='text-right '>اتصل بنا</li>
             </ul>
             </div>
           </div>
