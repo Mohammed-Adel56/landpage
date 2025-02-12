@@ -17,13 +17,13 @@ const Footer = () => {
             <div className='grid md:grid-cols-2 grid-cols-2 gap-7'>
 
            
-            <ul className="space-y-2 text-[#6D6D6D] text-[18px]">
+            <ul className="space-y-2 text-[#6D6D6D] text-[18px] text-left">
               <li>الأسئلة الشائعة</li>
               <li>الشحن والإرجاع</li>
               <li>من نحن</li>
               <li>المتجر</li>
             </ul>
-            <ul className="space-y-2 text-[#6D6D6D] text-[18px]">
+            <ul className="space-y-2 text-[#6D6D6D] text-[18px] text-left">
               <li>الصفحة الرئيسية</li>
               <li>سياسة الخصوصية</li>
               <li>شروط الخدمة</li>

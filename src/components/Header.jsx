@@ -108,7 +108,7 @@ function Header() {
                 className="absolute top-0 right-[-5px] w-[74px] h-full" 
               />
               <div className="absolute top-1 right-30 text-gray-400 text-sm">
-                <input value="وش اللي تدوري عليه؟"/>
+                <input value="...البحث"/>
               </div>
             </div>
           </div>
@@ -164,7 +164,7 @@ function Header() {
               className="absolute top-0 right-[-5px] w-[74px] h-full" 
             />
             <div className="absolute top-1 right-20 text-gray-400 text-sm">
-            <input value="وش اللي تدوري عليه؟"/>
+            <input value="...البحث"/>
             </div>
           </div>
         </div>
