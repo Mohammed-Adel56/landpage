@@ -17,17 +17,17 @@ const Footer = () => {
             <div className='grid md:grid-cols-2 grid-cols-2 gap-7'>
 
            
-            <ul className="space-y-2 text-[#6D6D6D] text-[18px] text-left">
+            <ul className="space-y-2 text-[#6D6D6D] text-[18px] ">
               <li>الأسئلة الشائعة</li>
               <li>الشحن والإرجاع</li>
-              <li>من نحن</li>
-              <li>المتجر</li>
+              <li className='text-left'>من نحن</li>
+              <li className='text-left'>المتجر</li>
             </ul>
-            <ul className="space-y-2 text-[#6D6D6D] text-[18px] text-left">
+            <ul className="space-y-2 text-[#6D6D6D] text-[18px]  ">
               <li>الصفحة الرئيسية</li>
               <li>سياسة الخصوصية</li>
-              <li>شروط الخدمة</li>
-              <li>اتصل بنا</li>
+              <li className='text-left'>شروط الخدمة</li>
+              <li className='text-left'>اتصل بنا</li>
             </ul>
             </div>
           </div>
